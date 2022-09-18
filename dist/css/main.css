@@ -1,0 +1,84 @@
+@keyframes left {
+    0%{
+        left: 30rem;
+    }
+    80%{
+        left: -10rem;
+    }
+    100%{
+        left: 0rem;
+    }
+}
+@keyframes right {
+    0%{
+        right: 30rem;
+    }
+    80%{
+        right: -10rem;
+    }
+    100%{
+        right: 0rem;
+    }
+}
+@keyframes top {
+    0%{
+        margin-top: 0;
+    }
+    100%{
+        margin-top: -120vh;
+    }
+}
+@keyframes bottom {
+    0%{
+        margin-top: -15rem;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        transform: scale(2);
+    }
+    0%{
+        transform: scale(-1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes come {
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0) translateY(50px);
+        opacity: 0;
+    }
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(234, 179, 8);
+    border-radius: 3px;
+}
+
+body{
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(135)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 1)'/><path d='M20-5V5m0 30v10m20-30v10M0 15v10'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='hsla(54, 100%, 62%, 0.14)' fill='none'/><path d='M-5 40H5M-5 0H5m30 0h10M35 40h10M15 20h10'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='hsla(54, 100%, 62%, 0.14)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+
+.trail{
+    height: 5px;
+    width: 5px;
+    background: black;
+    transition: .5s ease;
+    border-radius: 50%;
+    animation: come 1s linear forwards;
+}

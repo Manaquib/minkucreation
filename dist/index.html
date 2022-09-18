@@ -19,72 +19,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Six+Caps&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    
     <title>Minku Creation</title>
     <link rel="stylesheet" href="assets/index.3d3d07df.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 
-<body class="font-family: 'Work Sans', sans-serif; font-pango bg-black text-white">
+<body class="font-family: 'Work Sans', sans-serif; font-pango bg-gray-200 overflow-x-hidden">
     <!-- navbar -->
-    <nav class="navbar z-10 fixed w-[100vw] bg-black flex h-16 justify-between px-4 items-center">
-        <a href="/index.html"><img class="w-2/4" src="assets/logo.svg" alt="" srcset=""></a>
-        <i class="fa-solid fa-bars text-3xl"></i>
+    <nav class="navbar z-20 fixed w-[100vw] bg-gray-50 hidden h-16 justify-between px-4 items-center">
+        <a href="/index.html"><img class="w-2/4" src="assets/logo-invert.5653eefc.svg" alt="" srcset=""></a>
+        <i class="fa-solid fa-bars text-black text-3xl"></i>
     </nav>
     <!-- background/landing -->
-    <div id="background" class="relative">
-        <div class="image bg-cover bg-center bg-no-repeat w-[100vw] h-[100vh]"
-            style="background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.8)), url(assets/bg.7897267f.png);">
+    <div id="background" class="overflow-hidden relative h-[100vh] font-six">
+        <!-- landing animation -->
+        <div class="anim bg-slate-200 h-[100vh] w-[100vw]">
+            <!-- lights -->
+            <div class=" lights absolute h-[100vh] w-[100vw] hidden items-center justify-start" style="animation: left 1.5s ease; background-image: linear-gradient(rgba(255,255,255,.3), rgba(255, 255, 255, 0.3))">
+                <h1 class="lights text-yellow-500 uppercase text-7xl font-bold tracking-widest ml-12 z-10">lights</h1>
+            </div>
+            <!-- partition -->
+            <div class="partition absolute h-[100vh] w-[100vw] items-center justify-center hidden" style="animation: fade-in .5s ease;">
+                <h1 class="lights text-white uppercase text-7xl tracking-widest z-10">|</h1>
+            </div>
+            <!-- camera -->
+            <div class="camera absolute h-[100vh] w-[100vw] items-center justify-end hidden" style="animation: right 1.5s ease; background-image: linear-gradient(rgba(0,0,0,.3), rgba(0, 0, 0, 0.3))">
+                <h1 class="text-yellow-500 uppercase text-7xl font-bold tracking-widest mr-10 z-10">camera</h1>
+            </div>
+            <!-- action -->
+            <div class="action absolute h-[100vh] w-[100vw] justify-center bg-cover bg-center bg-no-repeat hidden" style="animation: fade-in 1.5s ease; background-image: linear-gradient(rgba(0,0,0,.6), rgba(0, 0, 0, 0.6)), url(assets/bg.7897267f.png)">
+                <h1 class="absolute text-yellow-500 uppercase text-7xl font-bold tracking-widest z-10 bottom-72">action</h1>
+            </div>
         </div>
-    </div>
-    <div
-        class="content absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 flex flex-col justify-center items-center">
-        <div class="image-wrap w-44 h-44 mb-8">
-            <div class="image shadow-3xl shadow-yellow-500 h-[100%] bg-center rounded-full bg-cover"
-                style="background-image: url(assets/minku.044fe839.png);"></div>
+        <!-- main landing -->
+        <div class="landing bg-gray-50 shadow shadow-yellow-500 rounded-br-full rounded-bl-full -z-10 font-pango uppercase absolute flex-col h-[98vh] w-[100vw] hidden items-center justify-center">
+            <div class="h-[100vh] w-[100vw] flex flex-col items-center justify-center">
+                <h1 class="text-4xl text-center">welcome to<br><span class="text-yellow-500">minkucreation</span></h1>
+            </div>
+            <i class="fa-solid mb-8 text-black animate-bounce text-2xl fa-angles-down"></i>
         </div>
-        <h1 class="uppercase text-4xl font-extrabold text-center leading-normal tracking-wider text-white">
-            minku<br><span class="text-yellow-500">creation</span></h1>
-        <h3 class="uppercase text-center font-six tracking-widest text-yellow-500 text-xl">lights|camera|actions</h3>
     </div>
     <!-- About -->
     <!-- <div class="bg-red-500 h-8"></div> -->
     <div class="px-4 py-10 font-pango" id="about">
-        <code class="font-semibold text-yellow-500">BIOGRAPHY</code>
-        <h2 class="font-extrabold text-white text-3xl">About MinkuCreation</h2>
-        <div class="py-10">
-            <img src="assets/logo.svg" alt="">
-        </div>
-        <p class="leading-8 px-4 text-lg text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+        <code class="font-semibold text-xl text-yellow-500">ABOUT</code>
+        <h2 class="font-extrabold text-black text-3xl mb-4">MinkuCreation</h2>
+        <p class="leading-8 px-4 text-lg text-black text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
             commodi dolor suscipit magni quibusdam a.
             Voluptate at ipsam enim magni quos magnam repudiandae laudantium facere cumque, dolorem quam ea odit soluta
             commodi quis, alias voluptatem corporis impedit vitae laboriosam, sit accusantium dolor. Similique
             distinctio saepe fugit architecto et. Et, sapiente?</p>
+            <!-- our team -->
+            <div class="team flex justify-center items-center flex-col">
+                <h1 class="font-semibold text-xl text-yellow-500 uppercase mt-4">our team</h1>
+                <div class="members flex flex-col items-center justify-center">
+                    <a href="images/minku.jpg" data-lightbox="our-team" data-title="The Founder" data-alt="Neeraj/Minku">
+                        <img class="grayscale w-80 my-5 rounded-xl hover:grayscale-0" src="images/minku.jpg" alt="The Founder">
+                    </a>
+                    <a href="images/VanshSharma.jpg" data-lightbox="our-team" data-title="The Someone" data-alt="Vansh">
+                        <img class="grayscale w-80 my-5 rounded-xl hover:grayscale-0" src="images/VanshSharma.jpg" alt="The Someone">
+                    </a>
+                    <a href="images/kartik.jpg" data-lightbox="our-team" data-title="The Developer" data-alt="Kartik/Djangoswami">
+                        <img class="grayscale w-80 my-5 rounded-xl hover:grayscale-0" src="images/kartik.jpg" alt="The Developer">
+                    </a>
+                </div>
+            </div>
     </div>
-    <div class="px-4 py-10" id="services">
-        <code class="font-semibold text-yellow-500">SERVICES</code>
+    <!-- banner -->
+    <div class="banner relative h-[15vh] w-[100vw] bg-black">
+        <video muted autoplay loop src="videos/pattern-curves.mp4" class="h-[15vh] w-[100vw] absolute grayscale hover:grayscale-0 object-cover"></video>
+    </div>
+    <!-- services -->
+    <div class="px-4 py-8" id="services">
+        <code class="font-semibold text-xl text-yellow-500">SERVICES</code>
         <h2 class="font-extrabold text-3xl">Quality Services</h2>
         <div class="pb-6 pt-3 ">
-            <div class="shadow-3xl shadow-zinc-500 px-8 py-12 my-10 rounded-lg">
+            <div class="shadow-md shadow-zinc-300 bg-gray-200 px-8 py-12 my-10 rounded-lg">
                 <img class="h-14 mb-4" src="assets/icons/light-bulb.png" alt="light-bulb">
                 <h5 class="font-bold text-xl py-4">Creative Design</h5>
-                <p class="font-light text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit,
-                    consequatur itaque laboriosam consectetur vel quaerat non ex soluta veniam.</p>
-            </div>
-            <div class="shadow-3xl shadow-zinc-500 px-8 py-12 my-10 rounded-lg">
-                <img class="h-14 mb-4" src="assets/icons/light-bulb.png" alt="light-bulb">
-                <h5 class="font-bold text-xl py-4">Creative Design</h5>
-                <p class="font-light text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit,
-                    consequatur itaque laboriosam consectetur vel quaerat non ex soluta veniam.</p>
-            </div>
-            <div class="shadow-3xl shadow-zinc-500 px-8 py-12 my-10 rounded-lg">
-                <img class="h-14 mb-4" src="assets/icons/light-bulb.png" alt="light-bulb">
-                <h5 class="font-bold text-xl py-4">Creative Design</h5>
-                <p class="font-light text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit,
-                    consequatur itaque laboriosam consectetur vel quaerat non ex soluta veniam.</p>
-            </div>
-            <div class="shadow-3xl shadow-zinc-500 px-8 py-12 my-10 rounded-lg">
-                <img class="h-14 mb-4" src="assets/icons/light-bulb.png" alt="light-bulb">
-                <h5 class="font-bold text-xl py-4">Creative Design</h5>
-                <p class="font-light text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit,
+                <p class="font-light text-lg text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit,
                     consequatur itaque laboriosam consectetur vel quaerat non ex soluta veniam.</p>
             </div>
             <p>Are you interested in working with us ? </p>
@@ -92,8 +107,13 @@
                 href="#contacts">Make your Brand</a>
         </div>
     </div>
-    <div class="px-4 py-10" id="contacts">
-        <code class="font-semibold text-yellow-500">CONTACT</code>
+    <!-- banner -->
+    <div class="banner relative h-[15vh] w-[100vw]">
+        <video muted autoplay loop src="videos/pattern-hexagon.mp4" class="h-[15vh] w-[100vw] absolute grayscale hover:grayscale-0 object-cover"></video>
+    </div>
+    <!-- contact us -->
+    <div class="px-4 pt-10" id="contacts">
+        <code class="font-semibold text-xl text-yellow-500">CONTACT</code>
         <h2 class="font-extrabold text-3xl">Get In Touch</h2>
         <p class="py-4 text-xl">Please fill out this form to contact with our team or you can also call us between 9:00 A.M to 8:00 P.M 7 days a week</p>
         <form action="#" class="space-y-8">
@@ -112,16 +132,33 @@
           <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-blue-600 dark:hover:bg-blue-900 dark:focus:ring-primary-800">Send message</button>
       </form>
     </div>
-    
+    <!-- banner -->
+    <div class="banner relative h-[15vh] w-[100vw] bg-black">
+        <video muted autoplay loop src="videos/pattern-tapes.mp4" class="h-[15vh] w-[100vw] absolute grayscale hover:grayscale-0 object-cover"></video>
+    </div>
+    <!-- footer -->
     <div class="py-16 text-center">
-        <footer class="text-xl">© Copyright 2019-2022. All rights are reserved.</footer>
+        <footer class="text-xl p-1">© Copyright 2019-2022. All rights are reserved.</footer>
         <ul class="flex space-x-6 justify-center py-4">
-            <li><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="assets/icons/facebook.png" class="w-7"></a></li>
-            <li><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="assets/icons/instagram.png" class="w-7"></a></li>
-            <li><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="assets/icons/linkedin.png" class="w-7"></a></li>
-            <li><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="assets/icons/youtube.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="assets/icons/facebook.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="assets/icons/instagram.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="assets/icons/linkedin.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="assets/icons/youtube.png" class="w-7"></a></li>
         </ul>
     </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'alwaysShowNavOnTouchDevices': true,
+          'wrapAround': true,
+          'disableScrolling': true,
+          'fitImagesInViewport': true,
+          'maxWidth': '20px',
+          'maxHeight': '20px',
+        })
+    </script>
 </body>
 
 </html>
