@@ -35,22 +35,18 @@
     <!-- background/landing -->
     <div id="background" class="overflow-hidden relative h-[100vh] font-six">
         <!-- landing animation -->
-        <div class="anim bg-slate-200 h-[100vh] w-[100vw]">
+        <div class="anim flex justify-center items-center bg-slate-200 h-[100vh] w-[100vw]">
             <!-- lights -->
-            <div class=" lights absolute h-[100vh] w-[100vw] hidden items-center justify-start" style="animation: left 1.5s ease; background-image: linear-gradient(rgba(255,255,255,.3), rgba(255, 255, 255, 0.3))">
-                <h1 class="lights text-yellow-500 uppercase text-7xl font-bold tracking-widest ml-12 z-10">lights</h1>
-            </div>
-            <!-- partition -->
-            <div class="partition absolute h-[100vh] w-[100vw] items-center justify-center hidden" style="animation: fade-in .5s ease;">
-                <h1 class="lights text-white uppercase text-7xl tracking-widest z-10">|</h1>
+            <div class=" lights absolute h-[100vh] w-[100vw] hidden items-center justify-center" style="animation: left 1.5s ease; background-image: linear-gradient(rgba(255,255,255,.3), rgba(255, 255, 255, 0.3))">
+                <h1 class="lightInfo absolute text-yellow-500 uppercase text-7xl font-bold tracking-widest z-10">lights</h1>
             </div>
             <!-- camera -->
-            <div class="camera absolute h-[100vh] w-[100vw] items-center justify-end hidden" style="animation: right 1.5s ease; background-image: linear-gradient(rgba(0,0,0,.3), rgba(0, 0, 0, 0.3))">
-                <h1 class="text-yellow-500 uppercase text-7xl font-bold tracking-widest mr-10 z-10">camera</h1>
+            <div class="camera absolute h-[100vh] w-[100vw] items-center justify-center hidden" style="animation: right 1.5s ease; background-image: linear-gradient(rgba(0,0,0,.2), rgba(0, 0, 0, 0.2))">
+                <h1 class="cameraInfo text-yellow-500 uppercase text-7xl font-bold tracking-widest z-10">camera</h1>
             </div>
             <!-- action -->
-            <div class="action absolute h-[100vh] w-[100vw] justify-center bg-cover bg-center bg-no-repeat hidden" style="animation: fade-in 1.5s ease; background-image: linear-gradient(rgba(0,0,0,.6), rgba(0, 0, 0, 0.6)), url(assets/bg.7897267f.png)">
-                <h1 class="absolute text-yellow-500 uppercase text-7xl font-bold tracking-widest z-10 bottom-72">action</h1>
+            <div class="action absolute h-[100vh] w-[100vw] items-center justify-center bg-cover bg-center bg-no-repeat hidden" style="animation: fade-in 1.5s ease; background-image: linear-gradient(rgba(0,0,0,.6), rgba(0, 0, 0, 0.6)), url(assets/bg.7897267f.png)">
+                <h1 class="actionInfo absolute text-yellow-500 uppercase text-7xl font-bold tracking-widest z-10">action</h1>
             </div>
         </div>
         <!-- main landing -->
@@ -75,21 +71,48 @@
             <div class="team flex justify-center items-center flex-col">
                 <h1 class="font-semibold text-xl text-yellow-500 uppercase mt-4">our team</h1>
                 <div class="members flex flex-col items-center justify-center">
-                    <a href="images/minku.jpg" data-lightbox="our-team" data-title="The Founder" data-alt="Neeraj/Minku">
+                    <div class="team-img">
                         <img class="grayscale w-80 my-5 rounded-xl hover:grayscale-0" src="images/minku.jpg" alt="The Founder">
-                    </a>
-                    <a href="images/VanshSharma.jpg" data-lightbox="our-team" data-title="The Someone" data-alt="Vansh">
+                        <div class="member-info hidden flex-col items-center justify-center transition-all">
+                            <h1 class="text-center text-3xl">The Founder</h1>
+                            <ul class="flex space-x-6 justify-center py-4">
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="assets/icons/facebook.png" class="w-7"></a></li>
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="assets/icons/instagram.png" class="w-7"></a></li>
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="assets/icons/linkedin.png" class="w-7"></a></li>
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="assets/icons/youtube.png" class="w-7"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-img">
                         <img class="grayscale w-80 my-5 rounded-xl hover:grayscale-0" src="images/VanshSharma.jpg" alt="The Someone">
-                    </a>
-                    <a href="images/kartik.jpg" data-lightbox="our-team" data-title="The Developer" data-alt="Kartik/Djangoswami">
+                        <div class="member-info hidden flex-col items-center justify-center transition-all">
+                            <h1 class="text-center text-3xl">The Writer</h1>
+                            <ul class="flex space-x-6 justify-center py-4">
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="assets/icons/facebook.png" class="w-7"></a></li>
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="assets/icons/instagram.png" class="w-7"></a></li>
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="assets/icons/linkedin.png" class="w-7"></a></li>
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="assets/icons/youtube.png" class="w-7"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-img">
                         <img class="grayscale w-80 my-5 rounded-xl hover:grayscale-0" src="images/kartik.jpg" alt="The Developer">
-                    </a>
+                        <div class="member-info hidden flex-col items-center justify-center transition-all">
+                            <h1 class="text-center text-3xl">The Developer</h1>
+                            <ul class="flex space-x-6 justify-center py-4">
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="assets/icons/facebook.png" class="w-7"></a></li>
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="assets/icons/instagram.png" class="w-7"></a></li>
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="assets/icons/linkedin.png" class="w-7"></a></li>
+                                <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="assets/icons/youtube.png" class="w-7"></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
     </div>
     <!-- banner -->
     <div class="banner relative h-[15vh] w-[100vw] bg-black">
-        <video muted autoplay loop src="videos/pattern-curves.mp4" class="h-[15vh] w-[100vw] absolute grayscale hover:grayscale-0 object-cover"></video>
+        <video muted autoplay loop src="videos/pattern-curves.mp4" class="h-[15vh] w-[100vw] absolute grayscale object-cover"></video>
     </div>
     <!-- services -->
     <div class="px-4 py-8" id="services">
@@ -109,7 +132,7 @@
     </div>
     <!-- banner -->
     <div class="banner relative h-[15vh] w-[100vw]">
-        <video muted autoplay loop src="videos/pattern-hexagon.mp4" class="h-[15vh] w-[100vw] absolute grayscale hover:grayscale-0 object-cover"></video>
+        <video muted autoplay loop src="videos/pattern-hexagon.mp4" class="h-[15vh] w-[100vw] absolute grayscale object-cover"></video>
     </div>
     <!-- contact us -->
     <div class="px-4 pt-10" id="contacts">
@@ -119,31 +142,31 @@
         <form action="#" class="space-y-8">
             <div>
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name</label>
-                <input type="text" id="name" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-yellow-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-yellow-500 dark:shadow-sm-light" placeholder="Name" required="">
+                <input type="text" id="name" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:border-yellow-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-yellow-500 dark:shadow-sm-light" placeholder="Name" required="">
             </div>
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-yellow-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-yellow-500 dark:shadow-sm-light" placeholder="Email" required="">
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:border-yellow-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-yellow-500 dark:shadow-sm-light" placeholder="Email" required="">
           </div>
           <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-yellow-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-yellow-500" placeholder="Leave a comment..."></textarea>
+              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:border-yellow-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-yellow-500" placeholder="Leave a comment..."></textarea>
           </div>
           <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-blue-600 dark:hover:bg-blue-900 dark:focus:ring-primary-800">Send message</button>
       </form>
     </div>
     <!-- banner -->
     <div class="banner relative h-[15vh] w-[100vw] bg-black">
-        <video muted autoplay loop src="videos/pattern-tapes.mp4" class="h-[15vh] w-[100vw] absolute grayscale hover:grayscale-0 object-cover"></video>
+        <video muted autoplay loop src="videos/pattern-tapes.mp4" class="h-[15vh] w-[100vw] absolute grayscale object-cover"></video>
     </div>
     <!-- footer -->
     <div class="py-16 text-center">
-        <footer class="text-xl p-1">© Copyright 2019-2022. All rights are reserved.</footer>
+        <footer class="text-xl p-1">© Copyright 2022. All rights are reserved.</footer>
         <ul class="flex space-x-6 justify-center py-4">
-            <li class="grayscale hover:grayscale-0"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="assets/icons/facebook.png" class="w-7"></a></li>
-            <li class="grayscale hover:grayscale-0"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="assets/icons/instagram.png" class="w-7"></a></li>
-            <li class="grayscale hover:grayscale-0"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="assets/icons/linkedin.png" class="w-7"></a></li>
-            <li class="grayscale hover:grayscale-0"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="assets/icons/youtube.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="assets/icons/facebook.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="assets/icons/instagram.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="assets/icons/linkedin.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="assets/icons/youtube.png" class="w-7"></a></li>
         </ul>
     </div>
 
