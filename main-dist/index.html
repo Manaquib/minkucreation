@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<!-- https://marketifythemes.net/html/arlo/ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/assets/favicon.9f907987.9f907987.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Six+Caps&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    
+    <title>Minku Creation</title>
+    
+    
+
+    <!-- send mail -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("rB81rzeXvh7GoFru6");
+    })();
+    </script>
+  <script type="module" crossorigin src="/assets/index.ffdeb575.js"></script>
+  <link rel="stylesheet" href="/assets/index.0828fecd.css">
+</head>
+
+<!-- <i class="menu-close-icon fa-solid fa-xmark text-black text-4xl hidden"></i> -->
+<body class="font-family: 'Work Sans', sans-serif; font-pango bg-gray-200 overflow-x-hidden ">
+    <!-- custom cursor -->
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[99999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <div class="lg:block hidden cursor w-[12.5px] h-[12.5px] bg-yellow-500 rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[9999]"></div>
+    <!-- navbar --> 
+    <nav id="navbar" class="bg-gray-50 hidden fixed z-[999] border-gray-200 w-full px-2 sm:px-4 py-2.5">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="index.html" class="flex items-center">
+                <img src="/assets/logo-invert.8105032f.svg" class=" w-1/2" alt="MinkuCreation">
+                <!-- <img src="assets/logo.svg" class="hidden dark:block w-1/2" alt="Flowbite Logo"> -->
+            </a>
+            <button  id="navbar-trigger" type="button" class="inline-flex items-center pr-2  text-sm text-gray-500 rounded-lg lg:hidden" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <i class="menu-icon fa-solid fa-bars text-black text-3xl"></i>
+            </button>
+            <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+                <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border lg:flex-row lg:space-x-6 lg:mt-0 lg:text-sm lg:font-medium lg:border-0">
+                    <li><a href="#Home" class="text-xl block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Home</a></li>
+                    <li><a href="#About" class="text-xl block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">About Us</a></li>
+                    <li><a href="#Services" class="text-xl block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Our Services</a></li>
+                    <li><a href="#Clients" class="text-xl block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Our Clients</a></li>
+                    <li><a href="#Work" class="text-xl block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Our Work</a></li>
+                    <li><a href="#Contact" class="text-xl block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- background/landing -->
+    <div id="Home" class="overflow-hidden relative h-[100vh] font-six">
+        <!-- landing animation -->
+        <div class="anim flex justify-center items-center bg-slate-200 h-[100vh] w-[100vw]">
+            <!-- lights -->
+            <div class=" lights absolute h-[100vh] w-[100vw] hidden items-center justify-center" style="animation: right 1.5s ease; background-image: linear-gradient(rgba(255,255,255,.3), rgba(255, 255, 255, 0.3))">
+                <h1 class="lightInfo absolute text-yellow-500 uppercase text-7xl font-bold tracking-widest z-10">lights</h1>
+            </div>
+            <!-- camera -->
+            <div class="camera absolute h-[100vh] w-[100vw] items-center justify-center hidden" style="animation: left 1.5s ease; background-image: linear-gradient(rgba(0,0,0,.2), rgba(0, 0, 0, 0.2))">
+                <h1 class="cameraInfo text-yellow-500 uppercase text-7xl font-bold tracking-widest z-10">camera</h1>
+            </div>
+            <!-- action -->
+            <div class="action absolute h-[100vh] w-[100vw] items-center justify-center bg-cover bg-center bg-no-repeat hidden" style="animation: fade-in 1.5s ease; background-image: linear-gradient(rgba(0,0,0,.6), rgba(0, 0, 0, 0.6)), url(/assets/landing.091e546d.jpg)">
+                <h1 class="actionInfo absolute text-yellow-500 uppercase text-7xl font-bold tracking-widest z-10">action</h1>
+            </div>
+        </div>
+        <!-- main landing -->
+        <div class="landing bg-gray-50 shadow shadow-yellow-500 rounded-br-full rounded-bl-full -z-10 font-pango absolute flex-col h-[98vh] w-[100vw] hidden items-center justify-center">
+            <div class="h-[100vh] w-[100vw] flex flex-col items-center justify-center">
+                <h1 class="uppercase text-4xl text-center">welcome to<br><span class="text-yellow-500">minku creation</span></h1>
+                <p>Creative life in <span class="text-yellow-500">motion</span>, Young minds with <span class="text-yellow-500">passion</span></p>
+            </div>
+            <a href="#About"><i class="z-30 fa-solid mb-8 text-black animate-bounce text-2xl fa-angles-down"></i></a>
+        </div>
+    </div>
+    <!-- About -->
+    <!-- <div class="bg-red-500 h-8"></div> -->
+    <div class="px-4 py-10 my-16 font-pango max-w-6xl m-auto" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" id="About">
+        <code class="font-semibold text-xl text-yellow-500">ABOUT</code>
+        <h2 class="font-extrabold text-black text-3xl mb-4">MinkuCreation</h2>
+        <p class="leading-8 px-4 text-lg text-black text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+            commodi dolor suscipit magni quibusdam a.
+            Voluptate at ipsam enim magni quos magnam repudiandae laudantium facere cumque, dolorem quam ea odit soluta
+            commodi quis, alias voluptatem corporis impedit vitae laboriosam, sit accusantium dolor. Similique
+            distinctio saepe fugit architecto et. Et, sapiente?</p>
+        <!-- our team -->
+        <h1 class="font-semibold text-xl text-yellow-500 uppercase my-4 text-center">our team</h1>
+        <div class="team flex justify-center items-center flex-col">
+            <div class="members grid px-8 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-6 place-content-center">
+                <div class="relative team-img mb-4">
+                    <img class=" w-80 rounded-xl" src="/assets/minku.50c6ab55.jpg" alt="The Founder">
+                    <div class="member-info pt-5 flex opacity-0 flex-col justify-center items-center hover:backdrop-blur-[3px] hover:backdrop-grayscale rounded-xl absolute h-full w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition duration-500">
+                        <h1 class="text-center text-3xl text-gray-100">The Founder</h1>
+                        <p class="text-center text-base text-yellow-500">Neeraj Sharma</p>
+                        <ul class="flex space-x-6 justify-center py-4">
+                            <li class="hover:scale-125 transition-all"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="/assets/facebook.bead6125.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="/assets/instagram.fed9f47a.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="/assets/linkedin.9eb6ffcf.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="/assets/youtube.38f3003c.png" class="w-7"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative team-img mb-4">
+                    <img class=" w-80 rounded-xl" src="/assets/VanshSharma.982c20c3.jpg" alt="The Writer">
+                    <div class="member-info pt-5 flex opacity-0 flex-col justify-center items-center hover:backdrop-blur-[3px] hover:backdrop-grayscale rounded-xl absolute h-full w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition duration-500">
+                        <h1 class="text-center text-3xl text-gray-100">The Writer</h1>
+                        <p class="text-center text-base text-yellow-500">Vansh Sharma</p>
+                        <ul class="flex space-x-6 justify-center py-4">
+                            <li class="hover:scale-125 transition-all"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="/assets/facebook.bead6125.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="/assets/instagram.fed9f47a.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="/assets/linkedin.9eb6ffcf.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="/assets/youtube.38f3003c.png" class="w-7"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative team-img mb-4">
+                    <img class=" w-80 rounded-xl" src="/assets/kartik.b5ca724c.jpg" alt="The Developer">
+                    <div class="member-info pt-5 flex opacity-0 flex-col justify-center items-center hover:backdrop-blur-[3px] hover:backdrop-grayscale rounded-xl absolute h-full w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition duration-500">
+                        <h1 class="text-center text-3xl text-gray-100">The Developer</h1>
+                        <p class="text-center text-base text-yellow-500">Kartik Goswami</p>
+                        <ul class="flex space-x-6 justify-center py-4">
+                            <li class="hover:scale-125 transition-all"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="/assets/facebook.bead6125.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="/assets/instagram.fed9f47a.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="/assets/linkedin.9eb6ffcf.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="/assets/youtube.38f3003c.png" class="w-7"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative team-img mb-4">
+                    <img class=" w-80 rounded-xl" src="/assets/kartik.b5ca724c.jpg" alt="The Developer">
+                    <div class="member-info pt-5 flex opacity-0 flex-col justify-center items-center hover:backdrop-blur-[3px] hover:backdrop-grayscale rounded-xl absolute h-full w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition duration-500">
+                        <h1 class="text-center text-3xl text-gray-100">The Developer</h1>
+                        <p class="text-center text-base text-yellow-500">Kartik Goswami</p>
+                        <ul class="flex space-x-6 justify-center py-4">
+                            <li class="hover:scale-125 transition-all"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="/assets/facebook.bead6125.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="/assets/instagram.fed9f47a.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="/assets/linkedin.9eb6ffcf.png" class="w-7"></a></li>
+                            <li class="hover:scale-125 transition-all"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="/assets/youtube.38f3003c.png" class="w-7"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div class="px-4 py-8 max-w-6xl my-16 m-auto" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" id="Services">
+        <code class="font-semibold text-xl text-yellow-500">SERVICES</code>
+        <h2 class="font-extrabold text-3xl">Quality Services</h2>
+        <div class="grid px-8 md:grid-cols-2 lg:grid-cols-3 gap-x-10  place-content-center">
+            <div class="relative overflow-auto shadow-md shadow-zinc-300 bg-gray-100 max-h-96 px-8 py-12 mt-10 rounded-lg">
+                <img class="h-14 mb-4" src="/assets/light-bulb.27980875.png" alt="light-bulb">
+                <h5 class="font-bold text-xl py-4">Creative Design</h5>
+                <p class="font-light text-lg text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit,
+                    consequatur itaque laboriosam consectetur vel quaerat non ex soluta veniam.</p>
+            </div>
+            <div class="relative overflow-auto shadow-md shadow-zinc-300 bg-gray-100 max-h-96 px-8 py-12 mt-10 rounded-lg">
+                <img class="h-14 mb-4" src="/assets/light-bulb.27980875.png" alt="light-bulb">
+                <h5 class="font-bold text-xl py-4">Creative Design</h5>
+                <p class="font-light text-lg text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit,
+                    consequatur itaque laboriosam consectetur vel quaerat non ex soluta veniam.</p>
+            </div>
+            <div class="relative overflow-auto shadow-md shadow-zinc-300 bg-gray-100 max-h-96 px-8 py-12 mt-10 rounded-lg">
+                <img class="h-14 mb-4" src="/assets/light-bulb.27980875.png" alt="light-bulb">
+                <h5 class="font-bold text-xl py-4">Creative Design</h5>
+                <p class="font-light text-lg text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit,
+                    consequatur itaque laboriosam consectetur vel quaerat non ex soluta veniam.</p>
+            </div>
+            <div class="relative overflow-auto shadow-md shadow-zinc-300 bg-gray-100 max-h-96 px-8 py-12 mt-10 rounded-lg">
+                <img class="h-14 mb-4" src="/assets/light-bulb.27980875.png" alt="light-bulb">
+                <h5 class="font-bold text-xl py-4">Creative Design</h5>
+                <p class="font-light text-lg text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit,
+                    consequatur itaque laboriosam consectetur vel quaerat non ex soluta veniam.</p>
+            </div>
+           
+        </div>
+        <div class="join-us m-8">
+            <p>Are you interested in working with us ? </p>
+            <a class="underline decoration-1 decoration-zinc-500 underline-offset-4 text-yellow-500 hover:text-red-500"
+                href="#contacts">Make your Brand</a>
+            </div>
+    </div>
+    <!-- Our Clients -->
+    <div class="px-4 py-8 bg-gray-100 rounded-xl max-w-6xl my-16 m-auto" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" id="Clients">
+        <code class="font-semibold text-xl text-yellow-500 uppercase">clients</code>
+        <h2 class="font-extrabold text-3xl">Our Clients</h2>
+        <div class="relative">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                 <!-- Item 1 -->
+                <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
+                    <img src="/assets/dribble.c8f67f87.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAABQCAMAAADfnGukAAAAA3NCSVQICAjb4U/gAAACZ1BMVEX39vb29vb29fX19PT19fT08/P09PPz8/Lz8vLy8fHy8vHx8PDx8fDw8O/v7+7v7u7u7e3u7u3t7Ozt7ezs6+vs7Ovr6+rr6unq6ejq6unp6Ofp6ejo6Ofo5+bn5uXn5ubm5eTl5OPk4+Lj4uHi4eDh4N/h4d/g397g4N7f3t3e3dzd3Nvc29nc29rb2tjb2tna2dja2dfZ2NfY19bX1tTY1tXX1dTW1dPV1NLW1NPU09HV09LU0tHT0tDS0c/R0M7Qz83PzszQzs3PzczOzcvNzMrOzMrMy8nNy8nLysjMysjLycfKycfKyMbJx8XJyMXIxsTHxcPGxMLFw8HEwsDDwb/Dwr/Cwb7CwL7Bv73BwL3Avry/vbq/vbu+vLq+vLm9u7i9u7m8ure8uri7uba7ube6uLW4trO5trS3tbK4tbO2tLG3tLK1s7C0sq+zsa6ysK2wrquvraqwraqvrKmurKmtq6iuq6isqqetqqesqaarqaWqqKSrqKWqp6SppqOopaKnpKGmpKClo5+mo6Ckop6lop+joZ2koZ6joJ2ioJyin5uhnpqhnpugnZmgnZqfnJmfnJiem5eem5idmpacmZWbmJSal5OZlpKalpOYlZGZlZKXlJCWk4+Vko6UkY2TkIuTkIySj4uSjoqRjoqQjYmRjYmPjIiQjIiOi4aPi4eOioaNioWMiYSNiYWLiIOMiISLh4OJhoGKhoKIhYCJhYGHhH+IhICHg3+Gg36Fgn2Ggn6EgXyFgX2EgHuDgHuDf3qCfnmCfnqBfXiBfXmAfHiAfHd/e3Z+enV9eXR8eHN7d3L///9T4YIkAAAAzXRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AIe/cHAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAhgSURBVHic7Zr9X1TFHscFXVyfEFF86OEWmCVQlJqFpSDkLR40ZbFStEwTuOUlUVKMi65Kakiw2UU0XFhDnpeHwHV3SUCe1l3OmT+qc87MnD3fPcfq7KG2+7rz+WnmO3O+35n3np35zuzOQ0wKzYv0AP5eYjiAGA4ghgOI4QBiOIAYDiCGA4jhAGI4gBgOIIYDiOEAYjiAGA4ghgOI4QBiOIAYDiCGA4jhANKNY1lK8iLjYbfUD47Y95LK0pTkxRp9VqYmRRmPpE96cWTWd9+tfdto1LSWAM/zgwVS5V1bW3vNG6Fdoiw3Ox3VLxmNpFM6cRzsE6bBD7xnLOgKKy9pKFmoWLxisTczpM+JMdHc/LKxSHqlE4cbz+NWoqGg6YPYDf8BQqmduGh/BnTJHMHmqyZDkfRKJ45ZPEh3nqGgu8hc+eJ5aD+HiwH4DSwPYLNzvaFIeqUTxxQe5MMCQ0HT2gkOYTE9RIqBHNDlLAHvTDUUSa/Cw+F931DQqHLsxvGcsBpRHHA9qiQ4elIMRdKriOBAiVd9PM/deVMoFlEc/wQ9zvw/4UCrP7bWlEm7qIwDfln+p3C4d8/ZAGQcWcBMcXRtnLNIf0Th4XDt0WyNXwUT1thVsaC+NCGOFqPj4s1SgeLwZ4OuMo4nJGLm5fEJ8SsWzfUZIzwcU+ez8qhy89PxJJ8qc3RceyvYd9GBpo6b+xYEDe/Y2u2Hl0jFFypaO2vSxRLFMVuZ825uXl5+fuZzopni8JZm50hBdqwOOlqx7filptY2x4/flmU9rRrj/HVpWbmCK8HXtlhV628rPBycf3JG1vRE01ahaY1NnMGwvAXPLxeWS360VD53fPBQqM9UiSN8tVXs69qHgjh4/yT2OXGvQIGDe0zMk83pxM9Ky61RP85WuMBk2+fJYIRLss44fiGjm370vc6lJzwcoWpJQuhLPIHWJNJ17yO8zGwj9VQnnrXAIJYm6RsUOIJ6kBXEoZADpyCp348Ds7+rSPEGpnzjBU/e1ne+mhsc3L8QsuOim+4QVWS0xaS+n+SZ/5mPXh8gzxVq4uCvx6Cv1Dj4CtHNVofKPlW+kI4vsz2kjWuKAA7+UlT0HVxy0WP7RVz3lZL6ocd4fBeXoWwveeyYNo6WVahCA4dN8JLYpNE/UEZiZA+q2kYigIOrRFFknMO5pGs1wVFC6gcIDutSlOkhzx3VxtG0HJ3WwHFZ8PIVpxXf844UYlObemS9EcDhzkALwsFxRBPH42LNtWNst7AG95GKv/H4nr3H6nykeltcoOO+VftyffaX4OCC4jnvp1EoxjAO6m/q3CoFDjnMSMnC4EH3/hFp3437iKxCM2IiZJlS+XpwQN/VXXg4/C1fV1+gsp7OEjZTozi45nPnrKK3MwViGkNxTN04K0WyVuaZhISjlfRuTIyOjYtbvuDZ73B9ts6EltZSGA+/qxIfslorduibXrhnFouqxSiOQC5wJ59ZXlVa04ZJb6f1co2gy9ZualiLXu4g5S7LSn2zCirMJF19/WMUhz8DuKM4usH1T84oHyqytD54Ce0dw8XxfH1zUmrOjnAUx31K6jyuT9O84yOfJg56/ePfCdxpH+EsT9ro+bGN6BO8rnA3YvTNSanwcEzuV7WYbuGmIXpvQdKwmaOkXqiNQ77+gQf8CrJm/vya0vpkHO0JqAS/KL6T+qYEpBPHDHlDL6ha6EY79iExkF1v9jSpHyMfXpUZ4NhH5s1Vgt9aviBbqK9Yac0h+TkXIv+gkN8exy/UzAl9UwLSiWOCzMOlviytIyO9gu++3+oiXbvwrfvzjQSPkEEqcWy/T8qju5XeLA/p45sU1s2kM+e8cuVaLVVdXYW48FAcX+qbEpBOHL305XQVJ8aYzJIW44+1HC+V/HipyOPFJpo+ztaIJ/Z4ehfsL4Q4Em9Sl57P1s43mRebpSPwJkqT77A8bVpoXizlD+vuEhyXVqBoUwyRCX8AEcBxlqaB/KSz+bYdq+XaLqFpF5kjN15flFvaFkym/fbi3MNNfsrxNYgDnZQ7TnU03262221FAl9zHbVyo+3Nd4Qg9eLdspW4HSxcoBpbBHBsdfJaun9YOLXfkqtjrhnQPOF6JNMRTnAQx9sePkSjlULKXaDaU13HEcr4hVS814/mbN++Q1RG9ivREcKBPg9o8hjeitCHT1z2FfKK33KAI/qE6lTmE5Zjc43qWVcGMlnlztPDfX0DovqHuk+tixCONQ2as5wVdrcl1t+nwZ0UP0j5gP+pGP6pRlW3GwkIvXJX9XA1QhtVVkmVgp+SCOBAqerrF0GB80LTevvv4rBJJ6+dbiUOlPJTaLeWZwVz1lAoDpvyWSB3EkKluOgr/ytxoM2tGsMJSJt9Wgu0ztwL+R788AJ2QU8aZLveEvIcb5MOHXt+DglSJVrf69GIPyks0MX47fCXaQ77z8KBNpz3qoYzhE9aGy5MKIydB1NKlZ+w+9Q/sAfTGWzopn8ESL4I7j99BFNGw2OleRhfHm++OqmK37NWsDuloicdha9wfqhYlH+lG46op5A0LSts6Je2VG60rfp1wbDzmy68wk731ObKwTbYhK2HcwT/07G8oLZb3o3cJ+klxepD/x2UifR/TKwJRQ0DgBM/IJ2wi8Qkrf9IGDOSFd7vNkmH6jpdHiLvWO/RYBaQUnKzx+V13btUsEaqP3/geqdrxNXbcCRJ4WBLg2fcsU/pcv3B+l6PW3Q3cGpt0Jxa2uh0ieaxvuLgTU5qyQ89cnzP6NC/pUxwWUnvRP8Xen9aAWJ/lQNiOIAYDiCGA4jhAGI4gBgOIIYDiOEAYjiAGA4ghgOI4QBiOIAYDiCGA4jhAGI4gBgOIIYDiOEAYjiAfgXnUGD8s/+zZgAAAABJRU5ErkJggg==" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAABQCAMAAADfnGukAAAAA3NCSVQICAjb4U/gAAACc1BMVEX39vb29vb29fX19PT19fT08/P09PPz8/Lz8vLy8fHy8vHx8PDx8fDw8O/v7+7v7u7u7e3u7u3t7Ozt7ezs6+vs7Ovr6+rr6unq6ejq6unp6Ofp6ejo6Ofo5+bn5uXn5ubm5eTl5OPk4+Lj4uHi4eDh4N/h4d/g397g4N7f3t3e3dzd3Nvc29nc29rb2tjb2tna2dja2dfZ2NbZ2NfY19bX1tTY1tXX1dTW1dPV1NLW1NPU09HV09LT0tDU0tHS0c/R0M7Qz83PzszQzs3OzcvPzczOzMrNzMrMy8nNy8nLysjMysjKycfLycfKyMbJx8XJyMXIxsTHxcPGxMLFw8HEwsDDwb/Dwr/CwL7Cwb7BwL3Bv73Avry/vbq/vbu+vLm+vLq9u7i9u7m8ure8uri7uba7ube6uLW5t7S5trS4trO3tbK4tbO2tLG3tLK1s7C0sq+zsa6ysK2xr6ywrquxrqywraqvraqurKmvrKmtq6iuq6isqqetqqesqaarqaWqqKSrqKWqp6SppqOopaKnpKGmpKClo5+mo6Ckop6lop+koZ6joZ2ioJyjoJ2in5uhnpqhnpugnZqgnZmfnJifnJmem5eem5idmpacmZWbmJSal5OZlpKalpOYlZGZlZKXlJCWk4+Vko6UkY2TkIuTkIySj4uSjoqRjoqQjYmRjYmPjIiQjIiOi4aPi4eOioaNioWMiYSNiYWLiIOMiISLh4OJhoGKhoKIhYCJhYGHhH+IhICHg3+Gg36Fgn2Ggn6EgXyFgX2EgHuDgHuDf3qCfnmCfnqBfXiBfXmAfHiAfHd/e3Z+enV9eXR8eHN7d3L///81QeFBAAAA0XRSTlP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////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" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAABQCAMAAADfnGukAAAAA3NCSVQICAjb4U/gAAACbVBMVEX39vb29vb29fX19PT19fT08/P09PPz8/Lz8vLy8fHy8vHx8PDx8fDw8O/v7+7v7u7u7e3u7u3t7Ozt7ezs6+vs7Ovr6+rr6unq6ejq6unp6Ofp6ejo6Ofo5+bn5uXn5ubm5eTl5OPk4+Lj4uHi4eDh4N/h4d/g397g4N7f3t3e3dzd3Nvc29nc29rb2tjb2tna2dja2dfZ2NbZ2NfY19bX1tTY1tXX1dTW1dPV1NLW1NPU09HV09LU0tHT0tDS0c/R0M7Qz83PzszQzs3PzczOzcvNzMrOzMrMy8nNy8nLysjMysjLycfKycfKyMbJx8XJyMXIxsTHxcPGxMLFw8HEwsDDwb/Dwr/CwL7Cwb7BwL3Bv73Avry/vbq/vbu+vLm9u7i9u7m8ure8uri7uba7ube6uLW5t7S5trS4trO3tbK2tLG3tLK1s7C0sq+zsa6ysK2xr6ywrquxrqyvraqwraqvrKmurKmtq6iuq6isqqetqqesqaarqaWqqKSrqKWqp6SppqOopaKnpKGmpKClo5+mo6Ckop6lop+joZ2koZ6joJ2ioJyin5uhnpqhnpugnZmgnZqfnJmfnJiem5eem5idmpacmZWbmJSal5OZlpKalpOYlZGZlZKXlJCWk4+Vko6UkY2TkIuTkIySj4uSjoqRjoqQjYmRjYmPjIiQjIiOi4aPi4eOioaNioWMiYSNiYWLiIOMiISLh4OJhoGKhoKIhYCJhYGHhH+IhICHg3+Gg36Fgn2Ggn6EgXyFgX2EgHuDgHuDf3qCfnmCfnqBfXiBfXmAfHiAfHd/e3Z+enV9eXR8eHN7d3L////PSG9RAAAAz3RSTlP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAFdzkt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" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div id="carousel-item-5" class="hidden duration-700 ease-in-out">
+                    <img src="/assets/pinterest.a2116835.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button id="carousel-indicator-1" type="button" class="hidden w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"></button>
+                <button id="carousel-indicator-2" type="button" class="hidden w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"></button>
+                <button id="carousel-indicator-3" type="button" class="hidden w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"></button>
+                <button id="carousel-indicator-4" type="button" class="hidden w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"></button>
+                <button id="carousel-indicator-5" type="button" class="hidden w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"></button>
+            </div>
+        </div>
+    </div>
+    <!-- our work -->
+    <div class="px-4 py-8 max-w-6xl my-16 m-auto" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" id="Work">
+        <code class="font-semibold text-xl text-yellow-500 uppercase">work</code>
+        <h2 class="font-extrabold text-3xl">Our Contributions</h2>
+        <!-- tablet and desktop section -->
+        <section class="overflow-hidden hidden sm:block h-auto text-gray-700">
+            <div class="container py-2 mx-auto">
+                <div class="flex flex-wrap -m-1 md:-m-2">
+                    <div class="flex flex-wrap w-1/2 h-[25rem]">
+                        <div class="w-1/2 p-1 md:p-2">
+                            <div class="youtube-player block object-cover object-center w-full h-full rounded-lg" data-id="8MrluWREeak"></div>
+                        </div>
+                        <div class="w-1/2 p-1 md:p-2">
+                            <div class="youtube-player block object-cover object-center w-full h-full rounded-lg" data-id="seYRZ1bShOk"></div>
+                        </div>
+                        <div class="w-full p-1 md:p-2">
+                            <div class="youtube-player block object-cover object-center w-full h-full rounded-lg" data-id="zwWqrPfYCRE"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/2">
+                        <div class="w-full p-1 md:p-2">
+                            <div class="youtube-player block object-cover object-center w-full h-full rounded-lg" data-id="TS5mhWxTs_Q"></div>
+                        </div>
+                        <div class="w-1/2 p-1 md:p-2">
+                            <div class="youtube-player block object-cover object-center w-full h-full rounded-lg" data-id="OKna236SQec"></div>
+                        </div>
+                        <div class="w-1/2 p-1 md:p-2">
+                            <div class="youtube-player block object-cover object-center w-full h-full rounded-lg" data-id="xOj6OZcZBGw"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- mobile section -->   
+        <div id="default-carousel" class="relative sm:hidden" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 my-2 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="duration-700 ease-in-out absolute inset-0 mt-4 transition-all transform translate-x-0 z-20" data-carousel-item="">
+                    <div class="youtube-player rounded-md" data-id="8MrluWREeak"></div>
+                </div>
+                <!-- Item 2 -->
+                <div class="duration-700 ease-in-out absolute inset-0 mt-4 transition-all transform translate-x-full z-10" data-carousel-item="">
+                    <div class="youtube-player rounded-md" data-id="seYRZ1bShOk"></div>
+                </div>
+                <!-- Item 3 -->
+                <div class="duration-700 ease-in-out absolute inset-0 mt-4 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                    <div class="youtube-player rounded-md" data-id="zwWqrPfYCRE"></div>
+                </div>
+                <!-- Item 4 -->
+                <div class="duration-700 ease-in-out absolute inset-0 mt-4 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                    <div class="youtube-player rounded-md" data-id="TS5mhWxTs_Q"></div>
+                </div>
+                <!-- Item 5 -->
+                <div class="duration-700 ease-in-out absolute inset-0 mt-4 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                    <div class="youtube-player rounded-md" data-id="OKna236SQec"></div>
+                </div>
+                <!-- Item 6 -->
+                <div class="duration-700 ease-in-out absolute inset-0 mt-4 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                    <div class="youtube-player rounded-md" data-id="xOj6OZcZBGw"></div>
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <!-- contact us -->
+    <div class="px-4 py-8 max-w-6xl my-16 m-auto" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" id="Contact">
+        <div class="contact">
+            <code class="font-semibold text-xl text-yellow-500">CONTACT</code>
+            <h2 class="font-extrabold text-3xl">Get In Touch</h2>
+            <div class="contact-us flex justify-center items-center">
+                <div class="About hidden md:block">
+                    <div class="w-96 flex flex-col items-center justify-center">
+                        <img src="/assets/logo-invert.8105032f.svg"  alt="MinkuCreation">
+                        <p>Creative life in <span class="text-yellow-500">motion</span>, Young minds with <span class="text-yellow-500">passion</span></p>
+                    </div>
+                </div>
+                <div class="contact-form w-auto">
+                    <p class="py-4 text-xl">Please fill out this form to contact with our team or you can also call us between 9:00 A.M to 8:00 P.M 7 days a week</p>
+                    <form autocomplete="off" onsubmit="event.preventDefault(); sendEmail()" id="contact-form" action="#" class="space-y-8  px-4 mb-8 rounded-md">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Your name</label>
+                            <input type="text" id="name" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Name" required="">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="Email" required="">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                        </div>
+                        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white bg-black hover:bg-gray-800 rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="py-16 text-center bg-gray-100">
+        <footer class="text-xl p-1">© Copyright 2022. All rights are reserved.</footer>
+        <ul class="flex space-x-6 justify-center py-4">
+            <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.facebook.com/neeraj.minku2803" target="_blank"><img src="/assets/facebook.bead6125.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.instagram.com/minkucreation/" target="_blank"><img src="/assets/instagram.fed9f47a.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.linkedin.com/in/neerajminku/" target="_blank"><img src="/assets/linkedin.9eb6ffcf.png" class="w-7"></a></li>
+            <li class="grayscale hover:grayscale-0 hover:scale-150 transition-all"><a href="https://www.youtube.com/c/MinkuCreation/featured" target="_blank"><img src="/assets/youtube.38f3003c.png" class="w-7"></a></li>
+        </ul>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+    
+</body>
+
+</html>
