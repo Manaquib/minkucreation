@@ -725,7 +725,7 @@ video {
 }
 
 body {
-	cursor: default !important;
+	cursor: none !important;
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
