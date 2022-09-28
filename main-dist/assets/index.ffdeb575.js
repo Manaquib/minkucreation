@@ -122,3 +122,25 @@ class ArrowPointer {
       cursor.remove()
     }
   })()
+
+// send email 
+function sendEmail(){
+    const userName=document.querySelector("#name")
+    const userEmail=document.querySelector("#email")
+    const userMessage=document.querySelector("#message")
+    const params={
+        name: userName.value,
+        email: userEmail.value,
+        message: userMessage.value,
+    }
+    const serviceID="service_dqh9z8a"
+    const templateID="template_gby6y9l"
+
+    emailjs.send(serviceID, templateID, params).then(res=>{
+        userName.value=""
+        userEmail.value=""
+        userMessage.value=""
+        console.log(res)
+        alert("Email sent successfullty!!")
+    }).catch(err=>console.log(err))
+}
