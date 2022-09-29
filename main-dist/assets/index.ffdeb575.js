@@ -124,7 +124,7 @@ class ArrowPointer {
   })()
 
 // send email 
-function sendEmail(){
+document.querySelector("#submitBtn").addEventListener('click', ()=>{
     const userName=document.querySelector("#name")
     const userEmail=document.querySelector("#email")
     const userMessage=document.querySelector("#message")
@@ -135,12 +135,11 @@ function sendEmail(){
     }
     const serviceID="service_dqh9z8a"
     const templateID="template_gby6y9l"
-
+    userName.value=""
+    userEmail.value=""
+    userMessage.value=""
     emailjs.send(serviceID, templateID, params).then(res=>{
-        userName.value=""
-        userEmail.value=""
-        userMessage.value=""
         console.log(res)
-        alert("Email sent successfullty!!")
+        alert("Thank you for contacting with us!")
     }).catch(err=>console.log(err))
-}
+})
