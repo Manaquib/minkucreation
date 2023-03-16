@@ -122,3 +122,24 @@ class ArrowPointer {
       cursor.remove()
     }
   })()
+
+// send email 
+document.querySelector("#submitBtn").addEventListener('click', ()=>{
+    const userName=document.querySelector("#name")
+    const userEmail=document.querySelector("#email")
+    const userMessage=document.querySelector("#message")
+    const params={
+        name: userName.value,
+        email: userEmail.value,
+        message: userMessage.value,
+    }
+    const serviceID="service_dqh9z8a"
+    const templateID="template_gby6y9l"
+    userName.value=""
+    userEmail.value=""
+    userMessage.value=""
+    emailjs.send(serviceID, templateID, params).then(res=>{
+        console.log(res)
+        alert("Thank you for contacting with us!")
+    }).catch(err=>console.log(err))
+})
